@@ -46,7 +46,7 @@ Marvel_Superheros = {
 }
 
 Main_Character = "Spiderman"   #default character
-Inventory = []
+
 
 # Functions ----------------------------------------------------
 def Choose_Character():
@@ -63,14 +63,7 @@ def Choose_Character():
     else: 
       print(f"Invalid Character Choice")
 
-'''
-def Get_Weapons():
-  global Inventory
-  print(f"You will have access to the following Weapons: ")
-  for weapon in Marvel_Superheros[Main_Character]["Weapons"]:
-    print(f"-{weapon}")
-    Inventory.append(weapon)
-'''
+
   
 # Main --------------------------------------------------------
 print(f"Welcome to my Game!")
@@ -80,14 +73,4 @@ print('\n')
 # Print out main character's information
 print(f"Your character is {Main_Character}.")
 print(f"Your character's real name is {Marvel_Superheros[Main_Character]['Name']}.")
-
-'''
-# Stock the main characters inventory
-Get_Weapons()
-print('\n')
-# Print characters current inventory
-print(f"Current Inventory: ")
-for item in Inventory:
-  print(f"-{item}")
-'''
 
